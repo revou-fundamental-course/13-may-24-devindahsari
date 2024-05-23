@@ -4,8 +4,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Katik</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
+        <header>
+            <h1>Welcome to Katik</h1>
+            <p>Hai Sobat, Selamat datang di Katik :]</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </header>
+        <section>
+            <h2>Segitiga</h2>
+            <img src="assets/Segitiga.png">
+            <h3>Luas Segitiga</h3>
+            <p>Rumus Luas Segitiga yaitu:</p>
+            <strong>L = 1/2 x a x t</strong>
+            <p>Dimana:</p>
+            <p>L = Luas</p>
+            <p>a = Panjang Alas</p>
+            <p>t = tinggi</p>
+            <hr/>
+            <h4> Hitung Luas Segitiga</h4>
+                <form>
+                    <label for="alas">Nilai Alas :</label><br>
+                    <input type="text" id="alas" placeholder="Masukkan nilai alas segitiga" required>
+                    <br>
+                    <label for="tinggi">Nilai Tinggi :</label><br>
+                    <input type="text" id="tinggi" placeholder="Masukkan nilai tinggi segitiga" required>
+                </form>
+                <button id="btn-hitung">Hitung</button>
+                <button id="btn-reset">Reset</button>
+        </section>
+        <section>
+            <img src="assets/Segitiga.png">
+            <h3>Keliling Segitiga</h3>
+            <p>Rumus Keliling Segitiga yaitu:</p>
+            <strong>K = S1 + S2 + S3</strong>
+            <p>Dimana:</p>
+            <p>K = Keliling</p>
+            <p>S1 = Sisi A</p>
+            <p>S2 = Sisi B</p>
+            <p>S3 = Sisi C</p>
+            <hr/>
+            <h4> Hitung Keliling Segitiga</h4>
+                <form>
+                    <label for="sisiA">Nilai Sisi A :</label><br>
+                    <input type="text" id="sisiA" placeholder="Masukkan nilai sisi A" required>
+                    <br>
+                    <label for="sisiB">Nilai Sisi B :</label><br>
+                    <input type="text" id="sisiB" placeholder="Masukkan nilai sisi B" required>
+                    <br>
+                    <label for="sisiC">Nilai Sisi C :</label><br>
+                    <input type="text" id="sisiC" placeholder="Masukkan nilai sisi C" required>
+                </form>
+                <button id="btn-hitung">Hitung</button>
+                <button id="btn-reset">Reset</button>
+        </section>
+        <script src="js/script.js"></script>
     </body>
 </html>
