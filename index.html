@@ -13,52 +13,81 @@
             <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
         </header>
         <section>
-            <h2>Segitiga</h2>
-            <img src="assets/Segitiga.png">
-            <h3>Luas Segitiga</h3>
-            <p>Rumus Luas Segitiga yaitu:</p>
-            <strong>L = 1/2 x a x t</strong>
-            <p>Dimana:</p>
-            <p>L = Luas</p>
-            <p>a = Panjang Alas</p>
-            <p>t = tinggi</p>
-            <hr/>
-            <h4> Hitung Luas Segitiga</h4>
-                <form>
-                    <label for="alas">Nilai Alas :</label><br>
-                    <input type="text" id="alas" placeholder="Masukkan nilai alas segitiga" required>
-                    <br>
-                    <label for="tinggi">Nilai Tinggi :</label><br>
-                    <input type="text" id="tinggi" placeholder="Masukkan nilai tinggi segitiga" required>
-                </form>
-                <button id="btn-hitung">Hitung</button>
-                <button id="btn-reset">Reset</button>
+            <div class="section-content">
+                <h2>Segitiga</h2>
+            </div>
+            <div class="gambar">
+                <img src="assets/Segitiga.png" alt="Segitiga">
+            </div>
+            <!-- Luas Segitiga -->
+            <div id="luas-segitiga">
+                <section class="rumus">
+                    <h3>Luas Segitiga</h3>
+                    <p>Rumus Luas Segitiga yaitu:</p>
+                    <strong>L = 1/2 x a x t</strong>
+                    <p>Dimana:</p>
+                    <p>L = Luas</p>
+                    <p>a = Panjang Alas</p>
+                    <p>t = tinggi</p>
+                </section>
+                <hr/>
+                <section class="form-luas">
+                    <h4 style="text-align: center;"> Hitung Luas Segitiga</h4>
+                    <form id="formSegitiga">
+                        <label for="alas">Nilai Alas :</label><br>
+                        <input type="text" id="alas" placeholder="Masukkan nilai alas segitiga" required>
+                        <br>
+                        <label for="tinggi">Nilai Tinggi :</label><br>
+                        <input type="text" id="tinggi" placeholder="Masukkan nilai tinggi segitiga" required>
+                        <br>
+                        <label for="luas">Luas Segitiga :</label>
+                        <input type="text" id="luas">
+                        <br>
+                        <button type="button" id="btn-hitungluas" onclick="HitungLuas()">Hitung</button>
+                        <button type="button" id="btn-reset" onclick="ResetForm()">Reset</button>
+                    </form>
+                </section>
+                <section class="ganti">
+                    <button type="button" id="switch" onclick="HideOrShow()">Hitung Lain</button>   
+                </section> 
+            </div>
+            <!-- Keliling Segitiga -->
+            <div id="keliling-segitiga" style="display: none;">
+                <section class="rumus">
+                    <h3>Keliling Segitiga</h3>
+                    <p>Rumus Keliling Segitiga yaitu:</p>
+                    <strong>K = S1 + S2 + S3</strong>
+                    <p>Dimana:</p>
+                    <p>K = Keliling</p>
+                    <p>S1 = Sisi A</p>
+                    <p>S2 = Sisi B</p>
+                    <p>S3 = Sisi C</p>
+                </section>
+                <hr/>
+                <section class="form-keliling">
+                    <h4 style="text-align: center;"> Hitung Keliling Segitiga</h4>
+                    <form id="formSegitiga">
+                        <label for="sisiA">Nilai Sisi A :</label><br>
+                        <input type="text" id="sisiA" placeholder="Masukkan nilai sisi A" required>
+                        <br>
+                        <label for="sisiB">Nilai Sisi B :</label><br>
+                        <input type="text" id="sisiB" placeholder="Masukkan nilai sisi B" required>
+                        <br>
+                        <label for="sisiC">Nilai Sisi C :</label><br>
+                        <input type="text" id="sisiC" placeholder="Masukkan nilai sisi C" required>
+                        <br>
+                        <label for="keliling">Keliling Segitiga :</label>
+                        <input type="text" id="keliling">
+                    </form>
+                    <button type="button" id="btn-hitungkeliling" onclick="HitungKeliling()">Hitung</button>
+                    <button type="button" id="btn-reset" onclick="ResetForm()">Reset</button>
+                </section>
+                <section class="ganti">
+                    <button type="button" id="switch" onclick="HideOrShow()" >Hitung Lain</button>
+                </section>                  
+            </div>
         </section>
-        <section>
-            <img src="assets/Segitiga.png">
-            <h3>Keliling Segitiga</h3>
-            <p>Rumus Keliling Segitiga yaitu:</p>
-            <strong>K = S1 + S2 + S3</strong>
-            <p>Dimana:</p>
-            <p>K = Keliling</p>
-            <p>S1 = Sisi A</p>
-            <p>S2 = Sisi B</p>
-            <p>S3 = Sisi C</p>
-            <hr/>
-            <h4> Hitung Keliling Segitiga</h4>
-                <form>
-                    <label for="sisiA">Nilai Sisi A :</label><br>
-                    <input type="text" id="sisiA" placeholder="Masukkan nilai sisi A" required>
-                    <br>
-                    <label for="sisiB">Nilai Sisi B :</label><br>
-                    <input type="text" id="sisiB" placeholder="Masukkan nilai sisi B" required>
-                    <br>
-                    <label for="sisiC">Nilai Sisi C :</label><br>
-                    <input type="text" id="sisiC" placeholder="Masukkan nilai sisi C" required>
-                </form>
-                <button id="btn-hitung">Hitung</button>
-                <button id="btn-reset">Reset</button>
-        </section>
+        
         <script src="js/script.js"></script>
     </body>
 </html>

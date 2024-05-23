@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 10px;
+    background-color: #03AED2;
+    color: white;
+    text-align: center;
+}
+
+.section-content{
+    background-color: #FDDE55;
+    padding: 8px;
+    text-align: center;
+}
+
+.gambar{
+    text-align: center;
+}
+
+img{
+    height: 300px;
+}
+
+.rumus{
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #FDDE55;
+}
+
+.form-luas, .form-keliling {
+    padding: 20px;
+}
+
+input{
+    width: 100%;
+    border-radius: 4px;
+    height: 20px;
+    margin: 5px 0px;
+    padding: 5px;
+    background-color: #FEEFAD;
+}
+
+button{
+    background-color: #03AED2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #68D2E8;
+    color: black;
+}
+
+#btn-reset{
+    background-color: #FDDE55;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+#btn-reset:hover{
+    background: #FEEFAD;
+}
+
+.ganti{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+@media only screen and (max-width: 480px){
+    button {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+
+    #btn-reset{
+        width: 100%;
+    }
+}
